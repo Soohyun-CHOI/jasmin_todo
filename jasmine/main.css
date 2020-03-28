@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff") format("woff");
+}
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+textarea:focus, input:focus, select:focus {
+  outline: none;
+}
+
+input, textarea {
+  background-color: unset;
+  border: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: none;
+  background-color: #20639B;
+  width: calc(100vw - 40px * 2);
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+nav .input-wrapper {
+  border: none;
+  background-color: white;
+  width: 220px;
+  height: 36px;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+}
+nav .input-wrapper input {
+  border: none;
+  background-color: unset;
+  width: 170px;
+  height: 36px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin: 0;
+}
+nav img {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.todo-container {
+  font-size: 16px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  display: grid;
+  grid-template-row: unset;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-areas: unset;
+  grid-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  margin: 100px;
+}
+.todo-container .column {
+  border: none;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 1px solid #dddddd;
+  margin: 10px 0;
+}
+.todo-container .column .todo-category {
+  border: none;
+  background-color: #555555;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 16px;
+  color: white;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+}
+.todo-container .column .todo-category .category {
+  font-size: 16px;
+  color: white;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+.todo-container .column .todo-category img {
+  position: absolute;
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.todo-container .column .card {
+  border: none;
+  background-color: #e4e4e4;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+}
+.todo-container .column .card .title, .todo-container .column .card .description {
+  width: calc(100% - 20px * 2);
+  padding: 0 20px;
+  text-align: center;
+}
+.todo-container .column .card .title {
+  font-size: 20px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+}
+.todo-container .column .card .description {
+  font-size: 16px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+}
+.todo-container .column .card .divider {
+  border: none;
+  background-color: #555555;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+.todo-container .column .card img {
+  position: absolute;
+  right: 20px;
+}
+
+.modal-container {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.modal-container .modal {
+  border: none;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50vh - 600px / 2);
+  left: calc(50vw - 400px / 2);
+}
+.modal-container .modal select {
+  border: none;
+  background-color: white;
+  width: calc(100% - 10px * 2);
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-size: 18px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  margin: 10px;
+  border: 1px solid #555555;
+  padding-left: 5px;
+}
+.modal-container .modal input {
+  border: none;
+  background-color: white;
+  width: calc(100% - 10px * 2 - 5px);
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 0;
+  font-size: 20px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  border-bottom: 2px solid #555555;
+  margin: 10px;
+  padding-left: 5px;
+}
+.modal-container .modal textarea {
+  border: none;
+  background-color: white;
+  width: calc(100% - 10px * 2);
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 0;
+  font-size: 16px;
+  color: black;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+  border: 1px solid #555555;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px;
+  padding: 7px;
+}
+.modal-container .modal .button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  bottom: 0;
+}
+.modal-container .modal .button-row button {
+  border: none;
+  background-color: #333333;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 0;
+  font-size: 16px;
+  color: white;
+  font-family: "LotteMartDream", sans-serif;
+  font-weight: normal;
+}
+.modal-container .modal .button-row button:first-child {
+  border-radius: 0 0 0 5px;
+  border-right: 0.5px solid white;
+}
+.modal-container .modal .button-row button:last-child {
+  border-radius: 0 0 5px 0;
+  border-left: 0.5px solid white;
+}
+
+.delete-btn, .add-btn, .category-add-btn, select, option, button {
+  cursor: pointer;
+}
+
+.dp-none {
+  display: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}

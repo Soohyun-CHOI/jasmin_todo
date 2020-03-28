@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal-container dp-none">
+        <div class="modal">
+            <select class="category-select">
+            </select>
+            <input type="text" placeholder="제목을 입력해주세요." />
+            <textarea placeholder="내용을 입력해주세요."></textarea>
+            <div class="button-row">
+                <button class="save-btn">저장</button>
+                <button class="cancel-btn">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">To-Do-Manager</div>
+        <div class="input-wrapper">
+            <input class="category-title" placeholder="카테고리를 입력해주세요." />
+            <img src="assets/x.svg" class="category-add-btn">
+        </div>
+    </nav>
+
+    <div class="todo-container">
+        <div class="column">
+            <div class="todo-category">
+                <input class="category" value="개발">
+                <img class="add-btn" src="assets/x.svg">
+            </div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="자스민 2주차 과제">
+                <div class="divider"></div>
+                <textarea class="description">노마드 코더 메인페이지 클로닝 하기</textarea>
+            </div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="자스민 1주차 과제">
+                <div class="divider"></div>
+                <textarea class="description">유튜브 메인페이지 클로닝 하기</textarea>
+            </div>
+        </div>
+        <div class="column">
+            <div class="todo-category">
+                <input class="category" value="집안일">
+                <img class="add-btn" src="assets/x.svg"></div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="장보기">
+                <div class="divider"></div>
+                <textarea class="description">세제, 치약 사기</textarea>
+            </div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="설거지">
+                <div class="divider"></div>
+                <textarea class="description">라면 포트 설거지하기</textarea>
+            </div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="청소">
+                <div class="divider"></div>
+                <textarea class="description">화장실 청소하기</textarea>
+            </div>
+        </div>
+        <div class="column">
+            <div class="todo-category">
+                <input class="category" value="업무">
+                <img class="add-btn" src="assets/x.svg">
+            </div>
+            <div class="card">
+                <img class="delete-btn" src="assets/x.svg">
+                <input class="title" value="프론트 작업">
+                <div class="divider"></div>
+                <textarea class="description">모바일 프론트 작업 및 리팩토링</textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
